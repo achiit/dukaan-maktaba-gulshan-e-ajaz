@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Royal Taste Restaurant - Premium dining experience in Kannauj.">
+<title>Royal Taste Restaurant | Kannauj</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#0b0b0b;color:#f5f5f5;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:1000;background:rgba(10,10,10,.94);border-bottom:1px solid #2b2416;backdrop-filter:blur(10px)}
+.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:1.35rem;font-weight:800;letter-spacing:1px;color:#d6ad55}
+.logo span{display:block;font-size:.65rem;color:#aaa;letter-spacing:3px}
+nav{display:flex;gap:22px;align-items:center}
+nav a{color:#ddd;font-size:.95rem}
+nav a:hover{color:#d6ad55}
+.menu-btn{display:none;background:none;border:1px solid #555;color:#fff;padding:8px 11px;border-radius:8px}
+.hero{min-height:78vh;display:grid;place-items:center;text-align:center;padding:90px 20px;background:linear-gradient(rgba(0,0,0,.58),rgba(0,0,0,.8)),url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero h1{font-size:clamp(2.6rem,7vw,5.5rem);line-height:1.05;color:#fff}
+.gold{color:#d6ad55}
+.hero p{max-width:650px;margin:22px auto;color:#ddd;font-size:1.08rem}
+.btn{display:inline-block;padding:13px 22px;border-radius:8px;background:#d6ad55;color:#111;font-weight:700;margin:6px}
+.btn.alt{background:transparent;color:#fff;border:1px solid #d6ad55}
+section{padding:80px 0}
+.section-title{text-align:center;margin-bottom:42px}
+.section-title h2{font-size:2.25rem}
+.section-title p{color:#aaa;margin-top:8px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.about img{width:100%;border-radius:18px;display:block}
+.about p{color:#bbb;margin:16px 0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#121212;border:1px solid #282828;border-radius:15px;padding:25px}
+.card h3{color:#d6ad55;margin-bottom:8px}
+.card p{color:#aaa}
+.price{margin-top:14px;font-weight:800;color:#fff}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gallery img{width:100%;height:230px;object-fit:cover;border-radius:12px}
+.hours{max-width:650px;margin:auto;background:#121212;border:1px solid #292929;border-radius:16px;padding:25px}
+.row{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid #252525}
+.row:last-child{border-bottom:0}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.contact-box{background:#121212;border:1px solid #292929;border-radius:16px;padding:28px}
+.contact-box p{color:#bbb;margin:10px 0}
+.map{width:100%;height:330px;border:0;border-radius:15px}
+footer{padding:30px 0;border-top:1px solid #292929;text-align:center;color:#888}
+.wa{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;font-size:26px;font-weight:bold;box-shadow:0 8px 25px rgba(0,0,0,.4);z-index:1001}
+@media(max-width:800px){
+ nav{display:none;position:absolute;top:70px;left:0;right:0;background:#0d0d0d;padding:18px;flex-direction:column;border-bottom:1px solid #292929}
+ nav.open{display:flex}
+ .menu-btn{display:block}
+ .about,.contact{grid-template-columns:1fr}
+ .cards,.gallery{grid-template-columns:1fr}
+ .gallery img{height:220px}
+ section{padding:62px 0}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container nav">
+<a class="logo" href="#home">ROYAL TASTE<span>RESTAURANT • KANNAUJ</span></a>
+<button class="menu-btn" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#menu">Menu</a>
+<a href="#gallery">Gallery</a>
+<a href="#hours">Hours</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div>
+<div class="gold" style="font-weight:700;letter-spacing:3px">WELCOME TO</div>
+<h1>Royal Taste<br><span class="gold">Restaurant</span></h1>
+<p>Delicious food, elegant ambience and warm hospitality — a memorable dining experience in Kannauj.</p>
+<a class="btn" href="#menu">Explore Menu</a>
+<a class="btn alt" href="tel:+919999999999">Call Now</a>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+<div class="section-title"><h2>About Us</h2><p>A place for great food and great moments.</p></div>
+<div class="about">
+<img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1000&q=85" alt="Restaurant interior">
+<div>
+<h2>Made With Taste. Served With Heart.</h2>
+<p>Royal Taste Restaurant brings together delicious flavours, comfortable surroundings and friendly service for families, friends and food lovers.</p>
+<p>From quick bites to complete meals, every dish is prepared with care and served fresh.</p>
+<a class="btn" href="#contact">Visit Us</a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="menu">
+<div class="container">
+<div class="section-title"><h2>Our Popular Menu</h2><p>Sample menu — replace these items with the customer's real menu.</p></div>
+<div class="cards">
+<div class="card"><h3>Paneer Tikka</h3><p>Soft paneer with aromatic spices, grilled to perfection.</p><div class="price">₹220</div></div>
+<div class="card"><h3>Butter Chicken</h3><p>Creamy tomato gravy with tender chicken and rich spices.</p><div class="price">₹320</div></div>
+<div class="card"><h3>Veg Biryani</h3><p>Fragrant basmati rice cooked with fresh vegetables and spices.</p><div class="price">₹180</div></div>
+<div class="card"><h3>Dal Makhani</h3><p>Slow-cooked creamy black lentils with a rich finish.</p><div class="price">₹160</div></div>
+<div class="card"><h3>Masala Dosa</h3><p>Crispy dosa served with potato masala and chutneys.</p><div class="price">₹130</div></div>
+<div class="card"><h3>Cold Coffee</h3><p>Chilled creamy coffee — perfect with your meal.</p><div class="price">₹110</div></div>
+</div>
+</div>
+</section>
+
+<section id="gallery">
+<div class="container">
+<div class="section-title"><h2>Gallery</h2><p>A glimpse of the dining experience.</p></div>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=85" alt="Food">
+<img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85" alt="Dish">
+<img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=85" alt="Dining">
+</div>
+</div>
+</section>
+
+<section id="hours">
+<div class="container">
+<div class="section-title"><h2>Opening Hours</h2><p>Plan your visit.</p></div>
+<div class="hours">
+<div class="row"><span>Monday – Friday</span><strong>11:00 AM – 10:30 PM</strong></div>
+<div class="row"><span>Saturday</span><strong>11:00 AM – 11:00 PM</strong></div>
+<div class="row"><span>Sunday</span><strong>12:00 PM – 11:00 PM</strong></div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="section-title"><h2>Contact & Location</h2><p>Come and enjoy a meal with us.</p></div>
+<div class="contact">
+<div class="contact-box">
+<h3 class="gold">Royal Taste Restaurant</h3>
+<p>📍 Main Market, Kannauj, Uttar Pradesh, India</p>
+<p>📞 <a href="tel:+919999999999">+91 99999 99999</a></p>
+<p>✉️ royaltaste@example.com</p>
+<a class="btn" href="https://wa.me/919999999999?text=Hello%20Royal%20Taste%20Restaurant%2C%20I%20want%20to%20know%20more." target="_blank">WhatsApp Us</a>
+</div>
+<div>
+<iframe class="map" src="https://www.google.com/maps?q=Kannauj,Uttar+Pradesh,India&output=embed" loading="lazy" title="Royal Taste Restaurant location"></iframe>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<p>© <span id="year"></span> Royal Taste Restaurant. All rights reserved.</p>
+<p style="margin-top:6px;font-size:.85rem">Demo website created for presentation. Replace sample contact details, menu and reviews with the real business information.</p>
+</div>
+</footer>
+
+<a class="wa" href="https://wa.me/919999999999?text=Hello%20Royal%20Taste%20Restaurant" target="_blank" aria-label="WhatsApp">✆</a>
+
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click",()=>document.querySelector("nav").classList.remove("open")));
+</script>
+</body>
+</html>
